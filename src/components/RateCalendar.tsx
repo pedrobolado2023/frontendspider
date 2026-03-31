@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { format, startOfMonth, endOfMonth, eachDayOfInterval, isSameDay, addMonths, subMonths } from 'date-fns';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
@@ -12,7 +12,7 @@ interface CalendarProps {
   rates: Rate[];
 }
 
-const RateCalendar: React.FC<CalendarProps> = ({ rates }) => {
+const RateCalendar = ({ rates }: CalendarProps) => {
   const [currentDate, setCurrentDate] = useState(new Date());
   
   const monthStart = startOfMonth(currentDate);

@@ -1,4 +1,3 @@
-import React from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
 interface RateData {
@@ -11,7 +10,7 @@ interface ChartProps {
   hotelNames: string[];
 }
 
-const RateChart: React.FC<ChartProps> = ({ data, hotelNames }) => {
+const RateChart = ({ data, hotelNames }: ChartProps) => {
   const colors = ['#3b82f6', '#8b5cf6', '#ec4899', '#f59e0b', '#10b981'];
 
   return (

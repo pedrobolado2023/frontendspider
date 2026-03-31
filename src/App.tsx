@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useMemo } from 'react';
+import { useEffect, useState, useMemo } from 'react';
 import RateCalendar from './components/RateCalendar';
 import RateChart from './components/RateChart';
 import { LayoutDashboard, Database, Activity, Search, RefreshCcw } from 'lucide-react';
